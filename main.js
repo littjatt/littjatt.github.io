@@ -9,11 +9,11 @@ itemList.addEventListener('click', removeItem);
 // Filter event
 filter.addEventListener('keyup', filterItems);
 
-// Add item
+// Adding the item to list
 function addItem(e){
   e.preventDefault();
 
-  // Get input value
+  // Getting the user input value
   var newItem = document.getElementById('item').value;
   if (newItem.length > 0){
   // Create new li element
@@ -41,7 +41,7 @@ function addItem(e){
   }
 }
 
-// Remove item
+// Removing an item from list with delete button
 function removeItem(e){
   if(e.target.classList.contains('delete')){
     if(confirm('Are You Sure?')){
@@ -51,11 +51,11 @@ function removeItem(e){
   }
 }
 
-// Filter Items
+// Filter Items function
 function filterItems(e){
-  // convert text to lowercase
+  // converting the text to lowercase
   var text = e.target.value.toLowerCase();
-  // Get lis
+
   var items = itemList.getElementsByTagName('li');
   // Convert to an array
   Array.from(items).forEach(function(item){
