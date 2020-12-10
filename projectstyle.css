@@ -1,35 +1,48 @@
 body{
-    background: radial-gradient( #7DDD57, #09A09F) no-repeat fixed;
+    background: radial-gradient( white, black) no-repeat fixed;
 }
 div#main {
-    background-color: aquamarine;
+    background-color: ghostwhite;
     }
 
 header#main-header {
-    background: black;
+    background: grey;
+    border-bottom: 2px solid ghostwhite;
+    border-radius: 5px
 }
 h1#header-title {
-    background: -webkit-linear-gradient( #EE2626, #7DDD57, #09A09F);
+    background: radial-gradient( black, aliceblue);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    font-family: 'Piedra', cursive;
 }
 
 li.list-group-item {
     background: black;
     color: aliceblue;
+    border-bottom: 1px solid snow;
 }
-li:nth-child(even){
+/* li:nth-child(even){
     background-color: darkgray;
     color: aliceblue;
-}
+} */
 li:hover{
     border:2px solid transparent;
+    background-color: darkgray;
     opacity: .90;
+    cursor: pointer;
+    border-bottom:4px solid ghostwhite;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+    
 }
 
-h1#header-title {
+/* h1#header-title {
     color: rebeccapurple;
-}
+} */
 input#item, input#filter {
     background: darkgray;
     border: none;
